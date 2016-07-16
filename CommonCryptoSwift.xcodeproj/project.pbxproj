@@ -257,9 +257,14 @@
 				TargetAttributes = {
 					D5B2E89E1C3A780C00C0327D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 442RNUGV2T;
+						DevelopmentTeamName = "Nice Boy LLC";
+						LastSwiftMigration = 0800;
 					};
 					D5B2E8A81C3A780C00C0327D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 442RNUGV2T;
+						DevelopmentTeamName = "Nice Boy LLC";
 					};
 					D5C6293F1C3A7FAA007F7B7C = {
 						CreatedOnToolsVersion = 7.2;
@@ -481,6 +486,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CCommonCrypto";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -500,6 +506,7 @@
 				PRODUCT_NAME = CommonCryptoSwift;
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Sources/CCommonCrypto";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
