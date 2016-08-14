@@ -75,7 +75,7 @@ public struct HMAC {
 
   static func generate(_ string: String, key: String, crypto: Crypto) -> String? {
     guard let data = string.data(using: String.Encoding.utf8),
-      keyData = key.data(using: String.Encoding.utf8)
+      let keyData = key.data(using: String.Encoding.utf8)
       else { return nil }
 
     return HMAC.generate(data, key: keyData, crypto: crypto)?.hexString
