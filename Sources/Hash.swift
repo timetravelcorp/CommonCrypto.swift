@@ -47,7 +47,7 @@ public struct Hash {
 
   static func hash(_ data: Data, crypto: Crypto) -> Data {
     var buffer = Array<UInt8>(repeating: 0, count: Int(crypto.length))
-    _ = crypto.method(data: (data as NSData).bytes, len: UInt32(data.count), md: &buffer)
+    _ = crypto.method((data as NSData).bytes, UInt32(data.count), &buffer)
 
     return Data(bytes: UnsafePointer<UInt8>(buffer), count: buffer.count)
   }
