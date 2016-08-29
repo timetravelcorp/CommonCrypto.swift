@@ -47,7 +47,7 @@ public struct Hash {
 
   static func hash(data: NSData, crypto: Crypto) -> NSData {
     var buffer = Array<UInt8>(repeating: 0, count: Int(crypto.length))
-    let _ = crypto.method(data: data.bytes, len: UInt32(data.length), md: &buffer)
+    let _ = crypto.method(data.bytes, UInt32(data.length), &buffer)
 
     return NSData(bytes: buffer, length: buffer.count)
   }
@@ -89,6 +89,6 @@ public struct Hash {
   static func hash(string: String, crypto: Crypto) -> String? {
     guard let data = string.data(using: String.Encoding.utf8) else { return nil }
 
-    return Hash.hash(data: data, crypto: crypto).hexString
+    return Hash.hash(data: data as NSData, crypto: crypto).hexString
   }
 }
