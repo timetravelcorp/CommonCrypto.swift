@@ -54,35 +54,35 @@ public struct Hash {
 
   // MARK: - String
 
-  public static func MD2(string: String) -> String? {
+  public static func MD2(_ string: String) -> String? {
     return Hash.hash(string: string, crypto: .MD2)
   }
 
-  public static func MD4(string: String) -> String? {
+  public static func MD4(_ string: String) -> String? {
     return Hash.hash(string: string, crypto: .MD4)
   }
 
-  public static func MD5(string: String) -> String? {
+  public static func MD5(_ string: String) -> String? {
     return Hash.hash(string: string, crypto: .MD5)
   }
 
-  public static func SHA1(string: String) -> String? {
+  public static func SHA1(_ string: String) -> String? {
     return Hash.hash(string: string, crypto: .SHA1)
   }
 
-  public static func SHA224(string: String) -> String? {
+  public static func SHA224(_ string: String) -> String? {
     return Hash.hash(string: string, crypto: .SHA224)
   }
 
-  public static func SHA256(string: String) -> String? {
+  public static func SHA256(_ string: String) -> String? {
     return Hash.hash(string: string, crypto: .SHA256)
   }
 
-  public static func SHA384(string: String) -> String? {
+  public static func SHA384(_ string: String) -> String? {
     return Hash.hash(string: string, crypto: .SHA384)
   }
 
-  public static func SHA512(string: String) -> String? {
+  public static func SHA512(_ string: String) -> String? {
     return Hash.hash(string: string, crypto: .SHA512)
   }
 
