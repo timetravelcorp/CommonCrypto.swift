@@ -13,7 +13,7 @@ public extension NSData {
   var hexString: String {
     var result = ""
 
-    var bytes = [UInt8](count: length, repeatedValue: 0)
+    var bytes = [UInt8](repeating: 0, count: length)
     getBytes(&bytes, length: length)
 
     for byte in bytes {
