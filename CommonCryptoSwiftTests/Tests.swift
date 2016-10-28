@@ -29,11 +29,11 @@ class Tests: XCTestCase {
     let string = "https://www.google.com/logos/doodles/2016/parents-day-in-korea-5757703554072576-hp2x.jpg"
     let key = "google"
 
-    XCTAssertEqual(HMAC.MD5(string, key: key), "419337f8da2e81cdf12dcb9b8e4cd76c")
-    XCTAssertEqual(HMAC.SHA1(string, key: key), "5f4474c8872d73c1490241ab015f6c672c6dcdc8")
-    XCTAssertEqual(HMAC.SHA224(string, key: key), "82a903faa4f93c528f490c699c9bfef0c0ef8a3498dd677cfab0a71e")
-    XCTAssertEqual(HMAC.SHA256(string, key: key), "a8e314bf001c5ea640c374582f5a27d9d29a39cb1b1c729748bad5365dfb0632")
-    XCTAssertEqual(HMAC.SHA384(string, key: key), "afa2026322d2843e564a9d88e2a03a5a4f75581386217052d952bdda7a7af6a48ba4e0b927229cdec46cdf7e5ffa9ee3")
-    XCTAssertEqual(HMAC.SHA512(string, key: key), "d75af2a8f76dd22b3e7a52f84593e3c9d56065a675f5e96ecf3e1354d6dba05f357418fbfbd3af0491e69f548bb4200600d139d601741c6c9eb37952e2e38d7a")
+    XCTAssertEqual(HMAC.MD5(string: string, key: key), "419337f8da2e81cdf12dcb9b8e4cd76c")
+    XCTAssertEqual(HMAC.SHA1(string: string, key: key), "5f4474c8872d73c1490241ab015f6c672c6dcdc8")
+    XCTAssertEqual(HMAC.SHA224(string: string, key: key), "82a903faa4f93c528f490c699c9bfef0c0ef8a3498dd677cfab0a71e")
+    XCTAssertEqual(HMAC.SHA256(string: string, key: key), "a8e314bf001c5ea640c374582f5a27d9d29a39cb1b1c729748bad5365dfb0632")
+    XCTAssertEqual(HMAC.SHA384(string: string, key: key), "afa2026322d2843e564a9d88e2a03a5a4f75581386217052d952bdda7a7af6a48ba4e0b927229cdec46cdf7e5ffa9ee3")
+    XCTAssertEqual(HMAC.SHA512(string: string, key: key), "d75af2a8f76dd22b3e7a52f84593e3c9d56065a675f5e96ecf3e1354d6dba05f357418fbfbd3af0491e69f548bb4200600d139d601741c6c9eb37952e2e38d7a")
   }
 }
